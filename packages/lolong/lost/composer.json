@@ -1,0 +1,32 @@
+{
+    "name": "lolong/Lost",
+    "description": "Tao Lost zip crm",
+    "type": "library",
+    "require":
+    {
+        "kalnoy/nestedset": "^4.3"
+    },
+    "authors": [
+        {
+            "name": "noithatzip",
+            "email": "longlv@v-auto.com.vn"
+        }
+    ],
+    "autoload":
+    {
+        "psr-4":
+        {
+            "LoLong\\Lost\\": "src/"
+        }
+    },
+    "extra":
+    {
+        "laravel":
+        {
+            "providers": [
+                "LoLong\\Lost\\LostServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}

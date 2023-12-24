@@ -1,0 +1,43 @@
+{
+    "name": "noithatzip/taskable",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/noithatzip/taskable",
+    "keywords": ["Laravel", "Taskable"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NoiThatZip\\Taskable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NoiThatZip\\Taskable\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NoiThatZip\\Taskable\\TaskableServiceProvider"
+            ],
+            "aliases": {
+                "Taskable": "NoiThatZip\\Taskable\\Facades\\Taskable"
+            }
+        }
+    }
+}

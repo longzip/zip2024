@@ -1,0 +1,43 @@
+{
+    "name": "noithatzip/kh15able",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/noithatzip/kh15able",
+    "keywords": ["Laravel", "Kh15able"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NoiThatZip\\Kh15able\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NoiThatZip\\Kh15able\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NoiThatZip\\Kh15able\\Kh15ableServiceProvider"
+            ],
+            "aliases": {
+                "Kh15able": "NoiThatZip\\Kh15able\\Facades\\Kh15able"
+            }
+        }
+    }
+}

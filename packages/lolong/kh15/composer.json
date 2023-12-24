@@ -1,0 +1,32 @@
+{
+    "name": "lolong/kh15",
+    "description": "Tao Kh15 zip crm",
+    "type": "library",
+    "require":
+    {
+        "kalnoy/nestedset": "^4.3"
+    },
+    "authors": [
+        {
+            "name": "noithatzip",
+            "email": "longlv@v-auto.com.vn"
+        }
+    ],
+    "autoload":
+    {
+        "psr-4":
+        {
+            "LoLong\\Kh15\\": "src/"
+        }
+    },
+    "extra":
+    {
+        "laravel":
+        {
+            "providers": [
+                "LoLong\\Kh15\\Kh15ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
