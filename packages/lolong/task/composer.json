@@ -1,0 +1,32 @@
+{
+    "name": "lolong/task",
+    "description": "Tao ke hoach zip crm",
+    "type": "library",
+    "require":
+    {
+        "kalnoy/nestedset": "^4.3"
+    },
+    "authors": [
+        {
+            "name": "noithatzip",
+            "email": "longlv@v-auto.com.vn"
+        }
+    ],
+    "autoload":
+    {
+        "psr-4":
+        {
+            "LoLong\\Task\\": "src/"
+        }
+    },
+    "extra":
+    {
+        "laravel":
+        {
+            "providers": [
+                "LoLong\\Task\\TaskServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}

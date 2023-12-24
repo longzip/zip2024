@@ -1,0 +1,28 @@
+{
+    "name": "lolong/item",
+    "description": "Tao ke hoach zip crm",
+    "type": "library",
+    "authors": [
+        {
+            "name": "noithatzip",
+            "email": "longlv@v-auto.com.vn"
+        }
+    ],
+    "autoload":
+    {
+        "psr-4":
+        {
+            "LoLong\\Item\\": "src/"
+        }
+    },
+    "extra":
+    {
+        "laravel":
+        {
+            "providers": [
+                "LoLong\\Item\\ItemServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
